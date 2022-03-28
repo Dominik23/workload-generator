@@ -1,0 +1,9 @@
+﻿{
+  "agentId": 2,
+  "agentName": "workload-runner",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelines.actions.githubusercontent.com/yojfxrSYk1NefdK5tamc8QaR941atYXFYHqPKYpLRFD1CjIvkz",
+  "gitHubUrl": "https://github.com/Dominik23/workload-generator",
+  "workFolder": "_work"
+}
