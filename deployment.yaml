@@ -14,7 +14,7 @@ spec:
     spec: 
       containers:
       - name: workload-api
-        image: dhartl231198/k3s-workload
+        image: dhartl231198/k8s-workload
         imagePullPolicy: Always
         ports:
         - containerPort: 5200
