@@ -1,8 +1,8 @@
 #!/bin/bash
 
-SVC_NAME="actions.runner.Dominik23-workload-generator.workload-runner"
+SVC_NAME="actions.runner.Dominik23-workload-generator.C02Z453ALVDL"
 SVC_NAME=${SVC_NAME// /_}
-SVC_DESCRIPTION="GitHub Actions Runner (Dominik23-workload-generator.workload-runner)"
+SVC_DESCRIPTION="GitHub Actions Runner (Dominik23-workload-generator.C02Z453ALVDL)"
 
 user_id=`id -u`
 

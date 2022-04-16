@@ -1,6 +1,6 @@
 ﻿{
-  "agentId": 2,
-  "agentName": "workload-runner",
+  "agentId": 22,
+  "agentName": "C02Z453ALVDL",
   "poolId": 1,
   "poolName": "Default",
   "serverUrl": "https://pipelines.actions.githubusercontent.com/yojfxrSYk1NefdK5tamc8QaR941atYXFYHqPKYpLRFD1CjIvkz",
