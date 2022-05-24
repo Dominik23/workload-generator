@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: workload-deployment
+spec:
+  selector: 
+    matchLabels:
+      app: workload-deployment
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: workload-deployment
+    spec: 
+      containers:
+      - name: workload-deployment
+        image: dhartl231198/k8s-workload
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 5200
+        resources:
+          limits:
+            cpu: "1000m"
+            memory: "500Mi"
+          requests:
+            cpu: "500m"
+            memory: "50Mi"
+---
+kind: Service
+apiVersion: v1
+metadata:
+ name: workload-service
+spec:
+ selector:
+   app: workload-deployment
+ ports:
+ - protocol: TCP
+   port: 5200
+   nodePort: 30084
+ type: NodePort

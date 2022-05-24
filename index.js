@@ -5,7 +5,6 @@ app.use(express.json());
 app.use(cors())
 
 app.get('/start', (req, res) => {
-  this.shouldIncrease = true;
   let counter = 0;
   let loopCounter = 0;
   res.status(200).end("OK");
