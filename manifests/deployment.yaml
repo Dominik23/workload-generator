@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: workload-deployment
+  name: workload-generator
 spec:
   selector: 
     matchLabels:
-      app: workload-deployment
+      app: workload-generator
   replicas: 1
   template:
     metadata:
       labels:
-        app: workload-deployment
+        app: workload-generator
     spec: 
       containers:
-      - name: workload-deployment
+      - name: workload-generator
         image: dhartl231198/k8s-workload
         imagePullPolicy: Always
         ports:
@@ -29,12 +29,12 @@ spec:
 kind: Service
 apiVersion: v1
 metadata:
- name: workload-service
+ name: workload-generator
 spec:
  selector:
-   app: workload-deployment
+   app: workload-generator
  ports:
  - protocol: TCP
    port: 5200
-   nodePort: 30084
+   nodePort: 30088
  type: NodePort

@@ -1,12 +1,12 @@
 apiVersion: autoscaling/v2beta2
 kind: HorizontalPodAutoscaler
 metadata:
-  name: autoscaler
+  name: workload-generator
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
-    name: workload-deployment
+    name: workload-generator
   minReplicas: 1
   maxReplicas: 5
   behavior:

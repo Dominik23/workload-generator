@@ -36,4 +36,4 @@ jobs:
     steps:
       -
         name: Restart Deployment
-        run: kubectl rollout restart deployment workload-deployment
+        run: kubectl rollout restart deployment workload-generator
