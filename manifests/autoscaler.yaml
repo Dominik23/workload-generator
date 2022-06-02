@@ -13,7 +13,7 @@ spec:
     scaleDown: 
       policies: 
       - type: Pods 
-        value: 4 
+        value: 5
         periodSeconds: 1 
       selectPolicy: Max 
       stabilizationWindowSeconds: 0 

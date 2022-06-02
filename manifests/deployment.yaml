@@ -20,10 +20,10 @@ spec:
         - containerPort: 5200
         resources:
           limits:
-            cpu: "1000m"
-            memory: "500Mi"
+            cpu: "100m"
+            memory: "100Mi"
           requests:
-            cpu: "500m"
+            cpu: "50m"
             memory: "50Mi"
 ---
 kind: Service
